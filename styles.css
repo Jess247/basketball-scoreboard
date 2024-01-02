@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+    font-family:'clock';
+    src: url('E1234.ttf');
+   }
+
+body {
+  background: #21215e;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  height: 100vh;
+}
+
+.scoreboard {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+.scores {
+  text-align: center;
+}
+
+.score {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem 1rem .6rem 1rem;
+  width: 50%;
+  font-size: 5em;
+  font-family: "clock", sans-serif;
+  background: black;
+  color: darkred;
+}
+
+.btn {
+    background-color: #21215e;
+    padding: .7rem 1.4rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-family: 'clock', sans-serif;
+    transition: transform .5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #8181c5;
+    transform: scale(1.2);
+}
